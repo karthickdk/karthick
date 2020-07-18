@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="dkcss.css">
+    <title>My Resume</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">	
+	</script>
+	<script src="jquery.js">
+		var width=50;
+		var diff=2;
+		var id=0;
+		function inc()
+		{
+			clearIntervalId(id);
+			id=setInterval(zoomin,20);
+		}
+		function dec()
+		{
+			clearIntervalId(id);
+			id=setInterval(zoomout,20);
+		}	
+		function zoomin()
+		{
+			if(width<100)
+			{
+				width=width+diff;
+				document.getElementById("img1".style.width=width;
+			}
+			else
+			{
+				clearInterval(id);
+			}
+		}	
+		function zoomout()
+		{
+			if(width>100)
+			{
+				width=width-diff;
+				document.getElementById("img1".style.width=width;
+			}
+			else
+			{
+				clearInterval(id);
+			}
+		}
+	</script>	
+</head>
+<body>
+    <div class="r1">
+		<br></br>
+		<h1> Resume </h1>	
+		<img id="img1" onmouseover="inc()" onmouseout="dec()" src="passport.jpg" height="250" width="200">
+		<h2> Name : D.K.Karthick </h2></td>
+		<h2> MailId : dkkarthick555@gmail.com </h2>
+		<h2> B.E Electrical and Electronics Engineering </h2>
+		<a href="resumedk.pdf" target="_blank"><button type="button" class="btn btn-success" id="docresume"> Resume </button></a>
+		<br></br>
+	</div>
+	<div class="bg">
+		<div class="r2">
+			<br></br>
+			<h1 style="color:white"> Educational Qualification <h2>
+			<table  class="table" >
+			<tr>
+				<th style="text-align:center"> Qualification </th>
+				<th style="text-align:center"> Board/University </th>
+				<th style="text-align:center"> Year </th>
+				<th style="text-align:center"> Percentage </th>
+			</tr>
+			<tr class="success">
+				<td style="text-align:center"> B.E EEE </td>
+				<td style="text-align:center"> Anna University <br> (KLN College of Engineering) </td>
+				<td style="text-align:center">  2016-2020 </td>
+				<td style="text-align:center"> (CGPA): 7.577 </td>
+			</tr>
+			<tr class="danger">
+				<td style="text-align:center"> Higher secondary <br> (12th std) </td>
+				<td style="text-align:center"> State Board </td>
+				<td style="text-align:center">  2015-2016 </td>
+				<td style="text-align:center"> 81.3% </td>
+			</tr>	
+			<tr class="info">
+				<td style="text-align:center"> High School<br> (10th std) </td>
+				<td style="text-align:center"> State Board </td>
+				<td style="text-align:center">  2013-2014 </td>
+				<td style="text-align:center"> 87.6% </td>
+			</tr>
+			</table>
+			<br>		
+			<button type="button" class="btn btn-success" onclick="location.href='docpi.html'" id="docpi"> Know More About DK </button>
+			</br>
+		</div>
+		<div class="r3">
+			<br></br>
+			<h1 style="color:white"> Area of Interest </h1>
+			<table>
+			<tr>
+				<td style="text-align:center"> <img src="im1.jpg"> <h2 style="color:white"> Induction Motor </h2> </td>
+				<td style="text-align:center"> <img src="java1.jpg"> <h2 style="color:white"> Java <h2> </td>
+				<td style="text-align:center"> <img src="html1.jpg"> <h2 style="color:white"> HTML Css <h2> </td>
+				<td style="text-align:center"> <img src="cpp1.jpg"> <h2 style="color:white"> C++ <h2> </td>
+			</tr>
+			</table>	
+			<h2 style="color:white"> Languages Known : </h2>
+				<ul>
+					<li> <h2 style="color:white">Java </h2></li>
+					<li> <h2 style="color:white">C++</h2> </li>
+					<li> <h2 style="color:white">Python</h2> </li>
+					<li> <h2 style="color:white">Javascript</h2> </li>
+				</ul>	
+			<br>	
+		</div>	
+		<div class="r4">
+			<h2 style="color:white"><center><b> National Certification </b> </center> </h2>
+			<ul>
+				<li><h2 style="color:white"> Programming in Java </h2> </li>
+				<li><h2 style="color:white"> Programming in C++ </h2> </li>
+				<li><h2 style="color:white"> Problem solving Through Programming in C </h2> </li>
+			</ul>	
+			<br>
+			<center><button type="button" class="btn btn-danger btn-lg" onclick="location.href='docc.html'" id="docc"> View National Certificates </button></center>
+			<br></br>
+		</div>
+		<div class="r5">
+			<center><h1 style="color:white"> Projects Developed <h1></center>
+			<br></br>
+			<ul>
+				<li><h2 style="color:white"> Involuntary Power Meter Lectura System </h2></li>	
+				<li><h2 style="color:white"> Speed Control Of Ceiling Fan Using Temperature Sensor </h2></li>
+				<br></br> 
+				<center><button type="button" class="btn btn-warning btn-lg" onclick="location.href='proselect.html'" id="pro1"> View detail</h2> </button></center>
+					
+					
+			</ul>
+			<br></br>
+		</div>
+		<div class="r6">
+			<br></br>
+			<center><h2 style="color:white"> <b>LinkedIn Profile<b></h2></center>
+			<center><a href="https://www.linkedin.com/in/dk-karthick-05771b189"> <img src="linked.png" width="150" height="50" ></a></center>
+			<br></br>
+		</div>
+	</div>
+</body>
+</html>

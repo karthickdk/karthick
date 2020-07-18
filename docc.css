@@ -1,0 +1,17 @@
+h1{
+	font-size:200px;
+}
+body{
+	background-image:url("b15.jpg");
+	height:100%;
+	background-position:center;
+	background-attachment:fixed;
+	background-position:top 0px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+}
+table {
+	padding-left:25px;
+	padding-right:25px;
+}
