@@ -1,13 +1,14 @@
+@media only screen and (max-width: 768px) {
+
+
+        width: 100%;
+}
 body
 {
 	background-image: linear-gradient(aqua,#c0c0c0,beige);
 	color:white;
 }
-@media only screen and (max-width: 768px) {
 
-
-    width: 100%;
-}
 .bg {
 	background-image:url("b14.jpg");
 	height:100%;
